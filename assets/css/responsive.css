@@ -293,8 +293,8 @@ Mobile: < 740px
     .top-section .hero .left .btns {
         width: 100%;
         align-items: center;
-        justify-content: space-around;
-        gap: 0;
+        justify-content: center;
+        gap: 33px;
     }
 
     .top-section .play-btn a {
@@ -579,6 +579,10 @@ Mobile: < 740px
     .top-section .hero .left .left-title span {
         font-size: 50px;
         line-height: 60px;
+    }
+    
+    .top-section .hero .left .btns {
+        gap: 20px;
     }
 
     .portfolio-section .portfolio-img img {

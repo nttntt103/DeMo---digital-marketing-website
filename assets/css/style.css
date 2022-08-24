@@ -178,11 +178,13 @@ section {
 }
 
 .hero .left {
-    margin-top: calc(285px - 79px);
+    /* margin-top: calc(285px - 79px); */
+    margin-top: 285px;
 }
 
 .hero .right {
-    margin-top: calc(111px - 79px);
+    /* margin-top: calc(111px - 79px); */
+    margin-top: 111px;
 }
 
 .hero .left-title {

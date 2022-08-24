@@ -33,10 +33,6 @@ section {
     height: auto;
 }
 
-.top-section .wrapper {
-    position: relative;
-}
-
 /* .nav-shrink {
     position: -webkit-sticky;
     position: sticky;
@@ -51,14 +47,97 @@ section {
     display: block;
 }
 
-.top-section {
+
+
+
+
+
+
+
+
+
+.header-section {
+    display: flex;
+    justify-content: center;
     background: linear-gradient(90deg, #ffe6e6 0%, #f5fffe 26.81%, #fcf3ff 54.58%, #fff4e6 99.86%);
 }
 
-.top-section #nav-bar {
-    z-index: 999;
-    /* position: fixed; */
-    box-shadow: 5px 5px 15px -5px #fde4e4;
+.header-section .wrapper {
+    position: fixed;
+    /* background: linear-gradient(90deg, #ffe6e6 0%, #f5fffe 26.81%, #fcf3ff 54.58%, #fff4e6 99.86%); */
+    background-color: #ffffff;
+    z-index: 5;
+    box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.11);
+}
+
+.header-section nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-section nav .logo {
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 79px;
+    color: #e71d36;
+    text-decoration: none;
+}
+
+.header-section .nav-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.header-section nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 26px;
+    /* position: relative; */
+}
+
+.header-section nav ul li {
+    list-style: none;
+}
+
+.header-section nav ul li a {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #011627;
+    text-decoration: none;
+}
+
+.header-section nav ul li a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: #e71d36;
+    left: 0;
+    top: 30px;
+    transition: 0.3s;
+}
+
+.header-section nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-section nav button.red-btn {
+    top: 24px;
+}
+
+.red-btn {
+    border: none;
+    padding: 15px 44px;
+    background: #e71d36;
+    border-radius: 48px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+    cursor: pointer;
 }
 
 .menu-btn div {
@@ -81,75 +160,16 @@ section {
     transition: 0.5s;
 }
 
-nav {
-    display: flex;
-    /* justify-content: space-between; */
-    align-items: center;
-    justify-content: space-between;
-}
 
-nav .logo {
-    font-weight: 700;
-    font-size: 65px;
-    line-height: 79px;
-    color: #e71d36;
-    text-decoration: none;
-}
 
-.top-section .nav-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-}
 
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    gap: 26px;
-    position: relative;
-}
 
-nav ul li {
-    list-style: none;
-}
 
-nav ul li a {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    color: #011627;
-    text-decoration: none;
-}
 
-nav ul li a::after {
-    content: "";
-    display: block;
-    height: 2px;
-    width: 0;
-    background-color: #e71d36;
-    left: 0;
-    top: 30px;
-    transition: 0.3s;
-}
 
-nav ul li a:hover::after {
-    width: 100%;
-}
 
-nav button.red-btn {
-    top: 24px;
-}
-
-.red-btn {
-    border: none;
-    padding: 15px 44px;
-    background: #e71d36;
-    border-radius: 48px;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    color: #ffffff;
-    cursor: pointer;
+.top-section {
+    background: linear-gradient(90deg, #ffe6e6 0%, #f5fffe 26.81%, #fcf3ff 54.58%, #fff4e6 99.86%);
 }
 
 .hero {
@@ -204,18 +224,6 @@ nav button.red-btn {
     gap: 33px;
 }
 
-.red-btn {
-    padding: 15px 44px;
-    background: #e71d36;
-    border-radius: 48px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    color: #ffffff;
-    text-decoration: none;
-}
-
 .play-btn {
     display: flex;
     align-items: center;
@@ -232,6 +240,17 @@ nav button.red-btn {
     line-height: 24px;
     color: #e71d36;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 .feature-title {
     margin-top: 63px;
@@ -436,6 +455,15 @@ nav button.red-btn {
     color: #2ec4b6;
 }
 
+
+
+
+
+
+
+
+
+
 .client-section .wrapper {
     display: flex;
     justify-content: space-between;
@@ -518,6 +546,14 @@ nav button.red-btn {
     color: #ffffff;
 }
 
+
+
+
+
+
+
+
+
 .portfolio-section .wrapper {
     text-align: center;
     margin-bottom: 101px;
@@ -579,6 +615,15 @@ nav button.red-btn {
     transform: scale(1.15);
     transition: 0.4s ease-out;
 }
+
+
+
+
+
+
+
+
+
 
 .blog-section .wrapper {
     margin-bottom: 101px;
@@ -682,6 +727,15 @@ nav button.red-btn {
     letter-spacing: 0.02em;
     color: #2ec4b6;
 }
+
+
+
+
+
+
+
+
+
 
 .footer-section {
     background: linear-gradient(

@@ -74,25 +74,7 @@ Mobile: < 740px
         transform: rotate(45deg) translate(-10px, -7px);
         transition: 0.2s;
     }
-
-    .top-section .hero {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .top-section .right {
-        display: none;
-    }
-
-    .top-section .btns {
-        padding-bottom: 10px;
-    }
-
-    .client-section .wrapper {
-        display: flex;
-        flex-direction: column;
-    }
-
+    
     .nav-wrapper {
         position: absolute;
         display: flex;
@@ -106,22 +88,35 @@ Mobile: < 740px
         border-bottom-left-radius: 23px;
         border-bottom-right-radius: 23px;
     }
-
+    
     .nav-active {
         transform: translateX(0%);
     }
-
+    
     .nav-wrapper ul {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 32px;
     }
+    
+    .top-section .hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-section .right {
+        display: none;
+    }
+
+    .top-section .btns {
+        padding-bottom: 10px;
+    }
 
     .top-section .hero .left {
         margin-top: 100px;
     }
-
+    
     .top-section .left-detail {
         margin-bottom: 50px;
     }
@@ -150,6 +145,11 @@ Mobile: < 740px
 
     .pagetraffic-section .left {
         margin: 0;
+    }
+
+    .client-section .wrapper {
+        display: flex;
+        flex-direction: column;
     }
 
     .client-section .wrapper {
@@ -250,10 +250,18 @@ Mobile: < 740px
     .pagetraffic-section .wrapper {
         gap: 20px;
     }
+
+    .client-section .client-img {
+        /* Khi để gap: 20px thì width: 752px tràn khỏi thẻ div có width: 720px ???? */
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: calc(28px / 3);
+    }
 }
 
 @media only screen and (max-width: 767px) {
-    .top-section nav .logo {
+    .header-section nav .logo {
         font-size: 55px;
         line-height: 70px;
     }
@@ -300,11 +308,8 @@ Mobile: < 740px
 
     .red-btn {
         padding: 10px 25px;
-        font-weight: 500;
         font-size: 18px;
         line-height: 22px;
-        text-align: center;
-        color: #ffffff;
     }
 
     .green-btn {

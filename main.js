@@ -30,5 +30,5 @@ navBtn.addEventListener("click", () => {
 
 const logo = document.querySelector('.header-section .logo')
 logo.addEventListener("click", () => {
-  navWrapper.classList.toggle("nav-active");
+  navWrapper.classList.remove("nav-active");
 });

@@ -8,7 +8,7 @@
 //       }
 //     })
 
-const nav = document.querySelector('.top-section nav')
+const nav = document.querySelector('.header-section nav')
 
 const navWrapper = document.querySelector(".nav-wrapper");
 const menuBtn = document.querySelector(".menu-btn")
@@ -17,8 +17,8 @@ menuBtn.addEventListener('click', () => {
     nav.classList.toggle('menuToX')
 })
 
-const navLinks = document.querySelectorAll('.top-section ul li a')
-const navBtn = document.querySelector('.top-section button.red-btn')
+const navLinks = document.querySelectorAll('.header-section ul li a')
+const navBtn = document.querySelector('.header-section button.red-btn')
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
         navWrapper.classList.toggle('nav-active')
@@ -27,4 +27,3 @@ navLinks.forEach(link => {
 navBtn.addEventListener("click", () => {
   navWrapper.classList.toggle("nav-active");
 });
-

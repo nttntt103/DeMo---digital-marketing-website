@@ -27,3 +27,8 @@ navLinks.forEach(link => {
 navBtn.addEventListener("click", () => {
   navWrapper.classList.toggle("nav-active");
 });
+
+const logo = document.querySelector('.header-section .logo')
+logo.addEventListener("click", () => {
+  navWrapper.classList.toggle("nav-active");
+});

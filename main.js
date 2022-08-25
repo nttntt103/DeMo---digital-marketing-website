@@ -21,14 +21,26 @@ const navLinks = document.querySelectorAll('.header-section ul li a')
 const navBtn = document.querySelector('.header-section button.red-btn')
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
-        navWrapper.classList.toggle('nav-active')
+      navWrapper.classList.toggle('nav-active')
+      nav.classList.remove("menuToX")
     })
 })
 navBtn.addEventListener("click", () => {
-  navWrapper.classList.toggle("nav-active");
+  navWrapper.classList.toggle("nav-active")
+  nav.classList.remove("menuToX")
 });
 
 const logo = document.querySelector('.header-section .logo')
 logo.addEventListener("click", () => {
   navWrapper.classList.remove("nav-active");
+  nav.classList.remove("menuToX");
 });
+
+const headerSection = document.querySelector('.header-section')
+window.addEventListener('scroll', () => {
+  if (document.body.scrollTop || document.documentElement.scrollTop) {
+    headerSection.classList.add('sticky-active')
+  } else {
+    headerSection.classList.remove("sticky-active")
+  }
+})

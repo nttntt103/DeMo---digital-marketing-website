@@ -56,17 +56,21 @@ section {
 
 
 
+
+
 .header-section {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
     display: flex;
     justify-content: center;
-    background: linear-gradient(90deg, #ffe6e6 0%, #f5fffe 26.81%, #fcf3ff 54.58%, #fff4e6 99.86%);
+    z-index: 5;
+    overflow-y: hidden;   
+    background: linear-gradient(90deg, #FFE6E6 0%, #F5FFFE 26.81%, #FCF3FF 54.58%, #FFF4E6 99.86%);
 }
 
-.header-section .wrapper {
-    position: fixed;
-    /* background: linear-gradient(90deg, #ffe6e6 0%, #f5fffe 26.81%, #fcf3ff 54.58%, #fff4e6 99.86%); */
-    background-color: #ffffff;
-    z-index: 5;
+.header-section.sticky-active {
+    background: #ffffff;
     box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.11);
 }
 
@@ -82,6 +86,25 @@ section {
     line-height: 79px;
     color: #e71d36;
     text-decoration: none;
+    position: relative;
+}
+
+.header-section .logo::before {
+    content: '';
+    position: absolute;
+    background-image: url('/assets/img/fire.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 79px;
+    z-index: -1;
+    opacity: 0;
+    left: 90%;
+    transition: all 0.5s ease;
+}
+
+.header-section .logo:hover::before {
+    opacity: 1;
 }
 
 .header-section .nav-wrapper {
@@ -143,21 +166,14 @@ section {
 .menu-btn div {
     width: 35px;
     height: 5px;
-    margin: 7px;
+    margin: 7px 0;
     background-color: #e71d36;
 }
 
 .menu-btn {
-    padding: 5px;
     border-radius: 5px;
     display: none;
     cursor: pointer;
-}
-
-.menu-btn:hover {
-    background-color: #ffffff;
-    cursor: pointer;
-    transition: 0.5s;
 }
 
 
@@ -170,6 +186,7 @@ section {
 
 .top-section {
     background: linear-gradient(90deg, #ffe6e6 0%, #f5fffe 26.81%, #fcf3ff 54.58%, #fff4e6 99.86%);
+    /* background-image: linear-gradient(to right, #ff8897 0%, #94fff5 48%, #ffd8a3 100%); */
 }
 
 .hero {
@@ -762,6 +779,7 @@ section {
     color: #e71d36;
     margin-bottom: 25px;
     margin-top: 58px;
+    cursor: pointer;
 }
 
 .footer-section .col-1 p {

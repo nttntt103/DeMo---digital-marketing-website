@@ -92,7 +92,7 @@ section {
 .header-section .logo::before {
     content: '';
     position: absolute;
-    background-image: url('./assets/img/fire.gif');
+    background-image: url('../assets/img/fire.gif');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -185,7 +185,7 @@ section {
 
 
 .top-section {
-    background: url('./assets/img/frame-mask.png'), linear-gradient(90deg, #FFE6E6 0%, #F5FFFE 26.81%, #FCF3FF 54.58%, #FFF4E6 99.86%);
+    background: url('../assets/img/frame-mask.png'), linear-gradient(90deg, #FFE6E6 0%, #F5FFFE 26.81%, #FCF3FF 54.58%, #FFF4E6 99.86%);
     background-position: -206px -468.42px, center center;
     background-repeat: no-repeat, repeat;
 }

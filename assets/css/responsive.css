@@ -78,6 +78,11 @@ Mobile: < 740px
         transform: rotate(45deg) translate(-10px, -7px);
         transition: 0.2s;
     }
+
+    .header-section nav .logo {
+        font-size: 55px;
+        line-height: 70px;
+    }
     
     .nav-wrapper {
         position: fixed;
@@ -276,11 +281,6 @@ Mobile: < 740px
 }
 
 @media only screen and (max-width: 767px) {
-    .header-section nav .logo {
-        font-size: 55px;
-        line-height: 70px;
-    }
-
     .menu-btn {
         margin-right: 3px;
     }
@@ -633,4 +633,5 @@ Mobile: < 740px
         height: auto;
     }
 }
+
 

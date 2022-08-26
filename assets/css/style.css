@@ -59,14 +59,14 @@ section {
 
 
 .header-section {
-    position: -webkit-sticky;
-    position: sticky;
+    /* position: -webkit-sticky; */
+    position: fixed;
     top: 0px;
     display: flex;
     justify-content: center;
     z-index: 5;
-    overflow-y: hidden;   
-    background: linear-gradient(90deg, #FFE6E6 0%, #F5FFFE 26.81%, #FCF3FF 54.58%, #FFF4E6 99.86%);
+    overflow-y: hidden;
+    background: transparent;
 }
 
 .header-section.sticky-active {
@@ -185,8 +185,9 @@ section {
 
 
 .top-section {
-    background: linear-gradient(90deg, #ffe6e6 0%, #f5fffe 26.81%, #fcf3ff 54.58%, #fff4e6 99.86%);
-    /* background-image: linear-gradient(to right, #ff8897 0%, #94fff5 48%, #ffd8a3 100%); */
+    background: url('/assets/img/frame-mask.png'), linear-gradient(90deg, #FFE6E6 0%, #F5FFFE 26.81%, #FCF3FF 54.58%, #FFF4E6 99.86%);
+    background-position: -206px -468.42px, center center;
+    background-repeat: no-repeat, repeat;
 }
 
 .hero {
@@ -195,13 +196,13 @@ section {
 }
 
 .hero .left {
-    /* margin-top: calc(285px - 79px); */
     margin-top: 285px;
+    /* margin-top: calc(285px - 79px); */
 }
 
 .hero .right {
-    /* margin-top: calc(111px - 79px); */
     margin-top: 111px;
+    /* margin-top: calc(111px - 79px); */
 }
 
 .hero .left-title {
@@ -757,13 +758,11 @@ section {
 
 
 .footer-section {
-    background: linear-gradient(
-        90deg,
-        rgba(255, 230, 230, 0.52) 0%,
-        rgba(245, 255, 254, 0.52) 26.81%,
-        rgba(252, 243, 255, 0.52) 54.58%,
-        rgba(255, 244, 230, 0.52) 99.86%
-    );
+    background: linear-gradient(90deg,
+            rgba(255, 230, 230, 0.52) 0%,
+            rgba(245, 255, 254, 0.52) 26.81%,
+            rgba(252, 243, 255, 0.52) 54.58%,
+            rgba(255, 244, 230, 0.52) 99.86%);
 }
 
 .footer-section .footer-top {

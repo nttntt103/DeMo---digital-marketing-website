@@ -213,6 +213,8 @@ Mobile: < 740px
     }
 
     .footer-section .logo {
+        font-size: 55px;
+        line-height: 55px;
         margin-top: 40px;
     }
 
@@ -511,8 +513,6 @@ Mobile: < 740px
     }
 
     .footer-section .logo {
-        font-size: 55px;
-        line-height: 55px;
         margin-top: 25px;
     }
 
@@ -650,7 +650,5 @@ Mobile: < 740px
         height: auto;
     }
 }
-
-
 
 

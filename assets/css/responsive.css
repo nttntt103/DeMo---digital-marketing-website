@@ -609,7 +609,24 @@ Mobile: < 740px
     .footer-section .footer-bottom {
         display: flex;
         flex-direction: column;
-        gap: 20px 0;
+        gap: 10px 0;
+        font-size: 12px;
+        line-height: 15px;
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .pagetraffic-section .left {
+        width: 100%;
+    }
+
+    .pagetraffic-section .left-detail {
+        padding-left: 5px;
+    }
+
+    .pagetraffic-section .desc {
+        padding-left: 5px;
     }
 }
 
@@ -633,5 +650,7 @@ Mobile: < 740px
         height: auto;
     }
 }
+
+
 
 
